@@ -131,6 +131,7 @@ namespace UnityEngine.Tilemaps
         }*/
     }
 
+#if UNITY_EDITOR
     [CustomEditor(typeof(GrassBrush))]
     public class GrassBrushEditor : GridBrushEditor
     {
@@ -233,4 +234,5 @@ namespace UnityEngine.Tilemaps
                 EditorUtility.SetDirty(Brush);
         }
     }
+#endif
 }
